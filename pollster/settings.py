@@ -25,7 +25,7 @@ SECRET_KEY = '4=fw)eo1r!qcw23kgpy_weoo4!#enjc-rqu26298@omj*bsy8^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['olaniyi900.pythonanywhere.com']
 
 
 # Application definition
@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'pollster.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pollster',
-        'USER': 'postgres',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'olaniyi900$djangopoll',
+        'USER': 'olaniyi900',
         'PASSWORD': 'olakunleakin',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'HOST': 'olaniyi900.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
     }
 }
 
@@ -123,3 +123,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT ='/home/olaniyi900/djangopolls/static'
